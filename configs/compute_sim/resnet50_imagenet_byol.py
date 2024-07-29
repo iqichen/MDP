@@ -14,7 +14,7 @@ model = dict(
     backbone=dict(
         type='TIMMBackbone',
         model_name='resnet50',
-        checkpoint_path='/Checkpoint/yangxingyi/Pretrained/byol_resnet50_8xb32-accum16-coslr-300e_in1k_20211213-47673e22.pth'
+        checkpoint_path='/checkpoint/yangxingyi/Pretrained/byol_resnet50_8xb32-accum16-coslr-300e_in1k_20211213-47673e22.pth'
         ),
     neck=dict(type='GlobalAveragePooling'),
     head=dict(
