@@ -4,7 +4,7 @@ import torch
 
 from blocklize.block_meta import MODEL_BLOCKS
 
-root = 'E:/Code/MDP/out/feature_embeddings'
+root = 'out/feature_embeddings'
 
 PYTHS = os.listdir(root)
 PYTHS = [os.path.join(root, p) for p in PYTHS if p.endswith('.pth')]

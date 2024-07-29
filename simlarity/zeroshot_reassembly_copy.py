@@ -20,7 +20,7 @@ input_shape = (3, 224, 224)
 def parse_args():
     parser = argparse.ArgumentParser(description='mmcls test model')
     parser.add_argument(
-        '--path', default='E:/Code/MDP/out/assignment/assignment_hybrid_4.pkl')
+        '--path', default='out/assignment/assignment_hybrid_4.pkl')
     parser.add_argument('--C', type=float, default=30.)
     parser.add_argument('--minC', type=float, default=0.)
     parser.add_argument('--flop_C', type=float, default=10.)

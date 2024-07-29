@@ -14,7 +14,7 @@ input_shape = (3, 224, 224)
 
 def parse_args():
     parser = argparse.ArgumentParser(description='mmcls test model')
-    parser.add_argument('--path', default='E:/Code/MDP/out/assignment/assignment_hybrid_4.pkl')
+    parser.add_argument('--path', default='out/assignment/assignment_hybrid_4.pkl')
     parser.add_argument('--C', type=float, default=30.)
     parser.add_argument('--minC', type=float, default=0.)
     parser.add_argument('--flop_C', type=float, default=10.)
@@ -24,7 +24,7 @@ def parse_args():
     parser.add_argument('--batch_size', type=int, default=32)
     parser.add_argument('--zero_proxy', type=str, choices=['jacov', 'grad_norm', 'naswot', 'synflow', 'snip', 'fisher'])
     parser.add_argument('--data_config', type=str, default='configs/_base_/datasets/imagenet_bs64.py')
-    parser.add_argument('--blocks', type=str, nargs='+', help='Specify the blocks to combine in the format model_name:block_index')
+    parser.add_argument('--blocks', type=str, nargs='+', help='格式为：ResNet50:15 ResNet18:0 ResNet50:13 ResNet50:11')
 
     args = parser.parse_args()
 
