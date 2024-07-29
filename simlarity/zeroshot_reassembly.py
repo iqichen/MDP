@@ -24,7 +24,7 @@ def parse_args():
     parser.add_argument('--batch_size', type=int, default=32)
     parser.add_argument('--zero_proxy', type=str, choices=['jacov', 'grad_norm', 'naswot', 'synflow', 'snip', 'fisher'])
     parser.add_argument('--data_config', type=str, default='configs/_base_/datasets/imagenet_bs64.py')
-    parser.add_argument('--blocks', type=str, nargs='+', help='格式为：ResNet50:15 ResNet18:0 ResNet50:13 ResNet50:11')
+    parser.add_argument('--blocks', type=str, nargs='+', help='格式为：resnet50:3 resnet18:0 resnet50:2 resnet50:1')
 
     args = parser.parse_args()
 
